@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <h1>HTML Forms Demonstration</h1>
+
+    <p>This page demonstrates different HTML input mechanisms.</p>
+
+    <hr>
+
+
+<h2>1. Personal Information</h2>
+
+<form>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname">
+
+    <br><br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname">
+
+    <br><br>
+
+    <label for="telephone">Telephone Number:</label>
+    <input type="tel" id="telephone" name="telephone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       placeholder="123-456-7890"
+       title="Enter a phone number in the format 123-456-7890"
+       required>
+
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>2. Number Input</h2>
+
+<form>
+    <label for="number">Enter a number between 1 and 100:</label>
+    <input type="number" id="number" name="number" min="1" max="100">
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>3. Radio Buttons</h2>
+
+<form>
+    <p>Favorite songwriting style:</p>
+
+    <input type="radio" id="rock" name="style" value="rock">
+    <label for="rock">Rock</label>
+
+    <input type="radio" id="pop" name="style" value="pop">
+    <label for="pop">Pop</label>
+
+    <input type="radio" id="country" name="style" value="country">
+    <label for="country">Country</label>
+
+    <p>Preferred writing location:</p>
+
+    <input type="radio" id="home" name="location" value="home">
+    <label for="home">At Home</label>
+
+    <input type="radio" id="studio" name="location" value="studio">
+    <label for="studio">In a Studio</label>
+
+    <input type="radio" id="outside" name="location" value="outside">
+    <label for="outside">Outdoors</label>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>4. Checkboxes</h2>
+
+<form>
+    <p>Which instruments do you play?</p>
+
+    <input type="checkbox" id="guitar" name="instrument" value="guitar">
+    <label for="guitar">Guitar</label>
+
+    <input type="checkbox" id="piano" name="instrument" value="piano">
+    <label for="piano">Piano</label>
+
+    <input type="checkbox" id="drums" name="instrument" value="drums">
+    <label for="drums">Drums</label>
+
+    <p>Which genres do you enjoy?</p>
+
+    <input type="checkbox" id="jazz" name="genre" value="jazz">
+    <label for="jazz">Jazz</label>
+
+    <input type="checkbox" id="rockgenre" name="genre" value="rock">
+    <label for="rockgenre">Rock</label>
+
+    <input type="checkbox" id="folk" name="genre" value="folk">
+    <label for="folk">Folk</label>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>5. Slider Input</h2>
+
+<form>
+    <label for="rating">Rate your songwriting ability (1-10):</label>
+
+    <input type="range" id="rating" name="rating"
+           min="1" max="10" value="4">
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>6. Color Selection</h2>
+
+<form>
+    <label for="color">Choose your favorite color:</label>
+
+    <input type="color" id="color" name="color" value="#0000ff">
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>7. File Selection</h2>
+
+<form>
+    <label for="file">Upload a songwriting document:</label>
+
+    <input type="file" id="file" name="file">
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>8. Complaint Form</h2>
+
+<form>
+    <label for="complaint">Please describe your complaint:</label>
+
+    <br><br>
+
+    <textarea id="complaint" name="complaint"
+              rows="6" cols="50"
+              placeholder="Enter your complaint here..."></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+
+<h2>9. Song Submission Form</h2>
+
+<p>Submit an original song for review and feedback.</p>
+
+<form>
+    <label for="submitter">Your Name:</label>
+    <input type="text" id="submitter" name="submitter" required>
+
+    <br><br>
+
+    <label for="submitteremail">Email Address:</label>
+    <input type="email" id="submitteremail" name="submitteremail" required>
+
+    <br><br>
+
+    <label for="songtitle">Song Title:</label>
+    <input type="text" id="songtitle" name="songtitle" required>
+
+    <br><br>
+
+    <p>What genre best describes your song?</p>
+
+    <input type="radio" id="songrock" name="songgenre" value="rock">
+    <label for="songrock">Rock</label>
+
+    <input type="radio" id="songpop" name="songgenre" value="pop">
+    <label for="songpop">Pop</label>
+
+    <input type="radio" id="songcountry" name="songgenre" value="country">
+    <label for="songcountry">Country</label>
+
+    <input type="radio" id="songfolk" name="songgenre" value="folk">
+    <label for="songfolk">Folk</label>
+
+    <br><br>
+
+    <p>Which instruments are featured?</p>
+
+    <input type="checkbox" id="songguitar" name="songinstruments" value="guitar">
+    <label for="songguitar">Guitar</label>
+
+    <input type="checkbox" id="songpiano" name="songinstruments" value="piano">
+    <label for="songpiano">Piano</label>
+
+    <input type="checkbox" id="songdrums" name="songinstruments" value="drums">
+    <label for="songdrums">Drums</label>
+
+    <br><br>
+
+    <label for="songrating">How would you rate your song? (1-10)</label>
+
+    <input type="range" id="songrating" name="songrating"
+           min="1" max="10" value="5">
+
+    <br><br>
+
+    <label for="songfile">Upload your song:</label>
+    <input type="file" id="songfile" name="songfile">
+
+    <br><br>
+
+    <label for="songcomments">Additional Comments:</label>
+
+    <br><br>
+
+    <textarea id="songcomments" name="songcomments"
+              rows="5" cols="50"
+              placeholder="Tell us about your song..."></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit Song">
+
+</form>
+
+<hr>
+
+<a href="forms.html">HTML Forms</a>
+
+</body>
+</html>
